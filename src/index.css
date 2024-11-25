@@ -1,0 +1,14 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Fire Code";
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
