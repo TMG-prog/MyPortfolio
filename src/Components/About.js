@@ -9,7 +9,7 @@ const About = () => {
 
             <div className='about-img'>
     <div className = "about-img-wrapper">
-       <img src={IMG}></img>
+       <img src={IMG} alt='A picture of me'></img>
     </div>
 
                 <p className='about-desc'>"I am a Kenyan software developer driven by a passion for exploring the ever-evolving world of technology. Currently pursuing a Bachelor’s degree in Computer Science.

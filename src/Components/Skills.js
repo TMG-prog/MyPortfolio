@@ -1,4 +1,4 @@
-import { FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaDocker, FaJava ,FaSQL} from "react-icons/fa";
+import { FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaJava } from "react-icons/fa";
 
 const Skills = () => {
 const skillsArr = [
@@ -26,6 +26,7 @@ const skillsArr = [
 "name" : "Java",
 "icon" : FaJava,
 }
+
 
 ];
 return (
