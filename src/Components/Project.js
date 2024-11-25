@@ -7,7 +7,7 @@ const Project = () => {
     {
       title: 'Mazao-Hub',
       description: 'A web application meant to connect farmers with buyers direclty and eliminating middle men. ',
-      image: '/mazaohubpic.png'
+      image: '/Mazaohubpic.png'
     },
     {
       title: 'Taste of Africa',
