@@ -6,9 +6,9 @@ import IMG from "../assets/me.png";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: "ease-in-out", // Smooth easing
-      once: false, // Animation happens every scroll
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: false,
     });
   }, []);
 
