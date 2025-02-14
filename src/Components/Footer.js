@@ -6,7 +6,7 @@ return (
 <h1 className="footer-heading">Connect With Me</h1>
 <p className="footer-contact-access">Email: t.gmugure@gmail.com
 </p>
-<p className="footer-contact-access">Mobile: +254 7990361899
+<p className="footer-contact-access">Mobile: +254 799036199
 </p>
 </div>
 <div>

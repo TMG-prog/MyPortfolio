@@ -1,18 +1,26 @@
-//import { FaGithub, FaLinkedin } from "react-icons/fa";
-//import Avatar from '../assets/me.jpg';
+
+
+import {  FaGithub, FaInbox, FaLinkedin } from "react-icons/fa";
 
 const Body = () => {
     return (
+  
         <div id="body" className="body">
+
+<nav class="side-nav">
+        <ul>
+            <li><a href="#"><i><FaGithub/></i></a></li>
+            <li><a href="#"><i><FaInbox/></i></a></li>
+            <li><a href="#"><i><FaLinkedin/></i></a></li>
+        </ul>
+    </nav>
             <div className="body-container">
-                <p className="intro-text">Hello!, I am </p>
-                <h1 className="headline">Mugure Gitau.</h1>
+               <h2>Hello, I am</h2>
+                <h1 className="headline">MUGURE GITAU.</h1>
                 <h2 className="subheadline">A Software Developer Coding Solutions That Adapt to the Modern World.</h2>
-                
-                <a href="#projects"><button className="cta-button">Check out my work!</button></a>
-                <a href="https://www.canva.com/design/DAGXa0wLcZE/dnwPclk1n6vh_ITlrI7ryw/view?utm_content=DAGXa0wLcZE&utm_campaign=designshare&utm_medium=link&utm_source=editor" ><button className="Resume">Resume</button></a>
+              
                </div>
-        </div>
+               </div>
     );
 };
 

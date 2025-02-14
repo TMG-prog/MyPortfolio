@@ -1,55 +1,46 @@
-import { FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaJava } from "react-icons/fa";
+import React from "react";
+import { FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaJava, FaDatabase, FaPython, FaNodeJs, FaDocker } from "react-icons/fa";
+import { DiDart } from "react-icons/di";
+import { SiPandas, SiFlutter, SiFlask, SiDjango } from "react-icons/si";
+
+
+const skillsArr = [
+  { name: "JavaScript", icon: FaJs },
+  { name: "HTML", icon: FaHtml5 },
+  { name: "CSS", icon: FaCss3 },
+  { name: "Git", icon: FaGithub },
+  { name: "React.js", icon: FaReact },
+  { name: "Java", icon: FaJava },
+  { name: "MySQL", icon: FaDatabase },
+  { name: "Python", icon: FaPython },
+  { name: "Dart", icon: DiDart },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "Pandas", icon: SiPandas },
+  { name: "Flutter", icon: SiFlutter },
+  { name: "Flask", icon: SiFlask },
+  { name: "Django", icon: SiDjango },
+  { name: "Docker", icon: FaDocker },
+];
 
 const Skills = () => {
-const skillsArr = [
-{
-"name" : 'JavaScript',
-"icon" : FaJs
-},
-{
-"name" : "HTML",
-"icon" : FaHtml5
-},
-{
-"name" : "CSS",
-"icon" : FaCss3
-},
-{
-"name" : "Git",
-"icon" : FaGithub
-},
-{
-"name" : "Reactjs",
-"icon" : FaReact
-},
-{
-"name" : "Java",
-"icon" : FaJava,
-}
+  return (
+    <section id="skills" className="skills-container">
+      <h3 className="skills-title">SKILLS</h3>
+      <div className="slider">
+        <div className="slider-track">
+          {[...skillsArr, ...skillsArr].map((skill, index) => {
+            const Icon = skill.icon;
+            return (
+              <div key={index} className="skill-card">
+                <Icon className="skill-icon" />
+                <p className="skill-name">{skill.name}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-
-];
-return (
-<div id='skills' className='skills'>
-<h2 className='title'>Skills</h2>
-<div className='skill-holder'>
-{
-skillsArr.map((skill, index) => {
-const Icon = skill.icon;
-return (
-<i key={index} className='skill-cards'>
-<Icon className='skill-icon'/>
-<p
-className="skill"
->
-{skill.name}
-</p>
-</i>
-)
-})
-}
-</div>
-</div>
-)
-}
 export default Skills;

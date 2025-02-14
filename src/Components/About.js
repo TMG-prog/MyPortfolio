@@ -1,23 +1,34 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import IMG from "../assets/me.png";
 
-//import IMG from '../assets/Detective.png';
-import IMG from '../assets/me.jpg'
 const About = () => {
-    return (
-        <div id= "about" className='about'>
-            <h1 className='about-heading'>About Me</h1>
-            <div className='about-info'>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Smooth easing
+      once: false, // Animation happens every scroll
+    });
+  }, []);
 
-            <div className='about-img'>
-    <div className = "about-img-wrapper">
-       <img src={IMG} alt=' Me'></img>
+  return (
+    <div id="about" className="about">
+      <div className="content">
+        <h3 className="about-sub" data-aos="fade-up">ABOUT ME</h3>
+        <h1 className="about-heading" data-aos="fade-up" data-aos-delay="200">
+          "I am a <span className="Animate">PASSIONATE</span> Computer Science student and 
+          software developer dedicated to building <span className="Animate">EFFICIENT, SCALABLE</span> 
+          and <span className="Animate">USER-FRIENDLY</span> applications that make an IMPACT."
+        </h1>
+      </div>
+
+      {/* Right Side (Image) */}
+      <div className="about-img" data-aos="fade-left" data-aos-delay="300">
+        <img src={IMG} alt="me" />
+      </div>
     </div>
+  );
+};
 
-                <p className='about-desc'>"I am a Kenyan software developer driven by a passion for exploring the ever-evolving world of technology. Currently pursuing a Bachelor’s degree in Computer Science.
-                    I thrive on continuous learning and innovation. I hope you enjoy exploring some of the projects I've worked on as part of my journey in tech."</p>
-
-            </div>
-       </div></div>
-
-    )
-}
 export default About;
